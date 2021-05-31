@@ -1,0 +1,1053 @@
+/*======================== common css goes here ==================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+a{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*======================== navbar css goes here ==================*/
+
+.navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+    border-bottom: 1px solid #785f32;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding: 0 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #fec600;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1.5px;
+    background-color: #fec600;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+
+/*======================== banner css goes here ==================*/
+
+.banner-item{
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 1%, 100% 88%, 0% 100%);
+
+}
+
+.banner-item::after{
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.60);
+   top: 0;
+   left: 0;
+}
+
+.banner-content{
+    position: relative;
+    height: 100vh;
+    z-index: 999;
+}
+
+.content h2{
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.content h1{
+    font-size: 55px;
+    color: #fec600;
+    text-transform:uppercase;
+    font-weight: 700;
+    padding-top: 22px;
+    padding-bottom: 30px;
+}
+
+.content p{
+    color: #f1f1f1;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 60px;
+}
+.content a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 34px;
+    border: 1px solid #ffffff;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.content a:hover{
+    background-color: #fec600;
+    border-color: transparent;
+    color: #222222;
+}
+
+.content .btn-act{
+    background-color: #fec600;
+    border-color: transparent;
+    color: #222222;
+}
+
+.content .btn-act:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+#banner{
+    position: relative;
+}
+
+#banner i{
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background-color: rgb(255, 255, 255);
+    font-size: 23px;
+    color: #1c1416;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+#banner i:hover{
+    background-color: #fec600;
+}
+
+#banner .left{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    z-index: 99;
+}
+#banner .right{
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    z-index: 99;
+}
+
+
+/*======================== About css goes here ==================*/
+
+#about{
+    padding-bottom: 80px;
+}
+
+
+#about .headline h2{
+    color: #111111;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+#about .headline p{
+    color: #353535;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about-item{
+    background-color: #eeeeee;
+    padding: 40px 35px;
+    margin-top: 40px;
+    transition: all linear .3s;
+}
+
+.about-item:hover{
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0,0.3));
+}
+
+.about-item h2{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.about-item p{
+    line-height: 24px;
+    padding: 0 22px;
+}
+
+.about-item1{
+position: relative;
+z-index: 99;
+}
+
+.about-item1::before{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    left:50%;
+    bottom: -19px;
+    transform: translateX(-50%)rotate(45deg);
+    background-color: #eeeeee;
+}
+.about-item1::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left:50%;
+    bottom: -52px;
+    transform: translateX(-50%);
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.about-item1:hover::after{
+    background-color: #fec600;
+}
+
+.about-item2{
+    position: relative;
+    margin-top: 117px;
+    margin-right: 10px;
+    z-index: 99;
+}
+
+.about-item2::before{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    top: 50%;
+    right: -19px;
+    transform: translateY(-50%)rotate(45deg);
+    background-color: #eeeeee;
+}
+
+.about-item2::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left:110%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.about-item2:hover::after{
+    background-color: #fec600;
+}
+
+.about-item2 p{
+    padding:  0;
+}
+
+.about-item3{
+    position: relative;
+    margin-top: 114px;
+    margin-left: 10px;
+}
+
+
+.about-item3 p{
+    padding: 0;
+}
+.about-item3::before{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    top: 50%;
+    left: -19px;
+    transform: translateY(-50%)rotate(45deg);
+    background-color: #eeeeee;
+}
+
+.about-item3::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    right:374px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.about-item3:hover::after{
+    background-color: #fec600;
+}
+.about-item4{
+    position: relative;
+    margin-top: 54px;
+}
+
+
+.about-item4 p{
+    padding: 0;
+}
+.about-item4::before{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    top:-19px;
+    left: 50%;
+    transform: translateX(-50%)rotate(45deg);
+    background-color: #eeeeee;
+}
+
+.about-item4::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left:50%;
+    bottom: 256px;
+    transform: translateX(-50%);
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all linear .3s;
+    z-index: 99;
+}
+
+.about-item4:hover::after{
+    background-color: #fec600;
+}
+
+.about-img{
+    width: 320px;
+    height: 320px;
+    margin-top:55px;
+    margin-left: 20px;
+    position: relative;
+}
+
+
+.about-img::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0,0.30);
+}
+.about-img::after{
+    position: absolute;
+    content: '';
+    width: 345px;
+    height: 345px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #3f3f3f;
+    border-radius: 50%;
+}
+
+/*======================== Portfolio css goes here ==================*/
+
+#portfolio{
+    background-image: url(../images/portfolio-img.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    clip-path: polygon(0 11%, 100% 0, 100% 91%, 0% 100%);
+}
+
+#portfolio::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0;
+    left: 0;
+}
+
+#portfolio .headline {
+    margin-bottom: 36px;
+}
+#portfolio .headline h2{
+    color: #fff;
+}
+#portfolio .headline p{
+    color: #fff;
+    line-height: 24px;
+}
+
+.gal-main{
+    position: relative;
+    z-index: 99;
+}
+
+.gal-img{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.gal-over{
+    position: absolute;
+    width: 100%;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.gal-over i{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #fec600;
+    color: #fff;
+}
+
+.gal-img:hover .gal-over{
+    opacity: 1;
+    height: 100%;
+}
+
+.gal-item{
+    margin-right: 24px;
+}
+
+/*======================== Service css goes here ==================*/
+
+#service{
+    padding-bottom: 50px;
+}
+
+#service .headline{
+    margin-bottom: 40px;
+}
+
+#service .headline p{
+    line-height: 24px;
+}
+
+.service-item{
+    transition: all linear .3s;
+}
+
+.service-title h3{
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.service-icon{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #eeeeee;
+    text-align: center;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+
+.service-details{
+    background-color: #f1f1f1;
+    padding: 55px 30px;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.service-details:hover{
+    filter: drop-shadow(0px 0px 5px rgba(202, 202, 202));
+}
+
+.service-details::after{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #f1f1f1;
+    top: 50%;
+    left:-19px;
+    transform: translateY(-50%)rotate(45deg);
+    border-radius: 0 0 0 10px;
+}
+.service-details p{
+    color: #353535;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.service-details2{
+    background-color: #f1f1f1;
+    padding: 55px 30px;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.service-details2 p{
+    color: #353535;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 36px;
+    text-align: end;
+}
+
+.service-details2::after{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #f1f1f1;
+    top: 50%;
+    right:-18px;
+    transform: translateY(-50%)rotate(45deg);
+    border-radius: 0 0 0 10px;
+}
+
+.slick-slide img {
+	display: inline-block;
+    transition: all linear .3s ;
+}
+
+
+.service-item.slick-center .service-icon{
+    background-color: #fec600;
+    transform: scale(1.2);
+}
+
+.service-item.slick-center .service-details{
+filter: drop-shadow(0px 0px 5px rgba(202, 202, 202));
+}
+.service-item.slick-center .service-details2{
+filter: drop-shadow(0px 0px 5px rgba(202, 202, 202));
+}
+
+.service-main{
+    position: relative;
+}
+
+.service-slider{
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.service-main .up{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer!important;
+    z-index: 99;
+    transition: all linear .3s ;
+}
+.service-main .up:hover{
+    background-color: #fec600;
+    transition: all linear .3s ;
+    border: 0;
+}
+
+.service-main .down{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer!important;
+    z-index: 99;
+    transition: all linear .3s ;
+}
+
+.service-main .down:hover{
+    background-color: #fec600;
+    transition: all linear .3s ;
+    border: 0;
+}
+.service-main i{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #2e2e2e;
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear .3s ;
+}
+
+.service-shape{
+    position: absolute;
+    background: url(../images/service-line.png);
+    width: 1px;
+    height: 91.5%;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*======================== Feedback css goes here ==================*/
+
+#feedback{
+    background: url(../images/feedback-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    clip-path: polygon(0 13%, 100% 0, 100% 89%, 0% 100%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#feedback::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.feed-content{
+    position: relative;
+    z-index: 999;
+}
+
+.feedimg-item{
+    margin-bottom: 60px;
+}
+
+.feedimg-slider{
+    padding-top: 60px;
+}
+
+.feed-comments-item{
+    background-color: #f1f1f1;
+    padding: 60px 33px!important;
+    position: relative;
+}
+
+.feed-comments-item::before{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    top: 50%;
+    left:-19px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: #f1f1f1;
+    border-radius:0 0 0 5px;
+}
+.feed-comments-item::after{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 180px;
+    line-height: 180px;
+    background: url(../images/feed-design.png);
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.feed-comments-item h3{
+    font-size: 20px;
+    color: #222222;
+    text-transform: capitalize;
+}
+.feed-comments-item h6{
+    font-size: 14px;
+    color: #353535;
+    font-weight: 500;
+}
+.feed-comments-item p{
+    font-size: 14px;
+    color: #353535;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.feed-comments-item i{
+    font-size: 15px;
+    color: #fec600;
+    margin-bottom: 8px;
+}
+
+.feed-main i{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #fffefe;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    transition: all linear .3s ;
+}
+
+.feed-main .up2{
+    position: absolute;
+    top: 0;
+    left:8%;
+    transform: translateX(-50%);
+    cursor: pointer!important;
+    z-index: 99;
+    transition: all linear .3s ;
+}
+
+.feed-main .up2:hover{
+    background-color: #fec600;
+    border: 0;
+}
+.feed-main .down2{
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    transform: translateX(-50%);
+    cursor: pointer!important;
+    z-index: 99;
+    transition: all linear .3s ;
+}
+.feed-main .down2:hover{
+    background-color: #fec600;
+    border: 0;
+}
+
+.feed-shape{
+    position: absolute;
+    background: url(../images/feed-line.png);
+    width: 1px;
+    height: 85%;
+    top: 40px;
+    left: 8%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.feed-comments-item span{
+    font-family: 'Monsieur La Doulaise', cursive;
+}
+/*======================== Pricing plan css goes here ==================*/
+
+#pricing-plan{
+    padding-bottom: 50px;
+}
+
+#pricing-plan .headline h2{
+    color: #111111;
+}
+#pricing-plan .headline p{
+    line-height: 24px;
+}
+
+.pricing-item{
+    background-color: #f1f1f1;
+    position: relative;
+    transition: all linear .3s;
+    margin-top: 40px;
+
+}
+
+.pricing-item:hover{
+    filter: drop-shadow(0px 0px 5px #b1b1b1);
+}
+.pricing-head{
+    background-color: #353535;
+    padding-top: 30px;
+    padding-bottom: 94px;
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 95%);
+    transition: all linear .3s;
+}
+.pricing-head h5{
+   font-size: 20px;
+   color: #fff;
+   text-transform: uppercase;
+   transition: all linear .3s;
+}
+
+.pricing-circle{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #353535;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+}
+.pricing-item:hover .pricing-circle{
+    border-color:#fec600;
+}
+
+
+.circle-content{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background-color:#353535;
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.pricing-item:hover .circle-content{
+    background-color: #fec600;
+}
+.details h3{
+    font-size: 29px;
+    font-weight: 500;
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.details{
+    padding-top: 15px;
+}
+.details p{
+    text-transform: capitalize!important;
+    color: #fff;
+    transition: all linear .3s;
+    font-size: 12px;
+}
+
+.pricing-mid-details{ 
+    position: relative;
+}
+
+.pricing-mid-details{ 
+    margin-top: 50px;
+}
+
+.pricing-mid-details p{
+    margin-top: 26px;
+}
+
+.pricing-bottom{
+    background-color: #353535;
+    padding-top: 42px;
+    padding-bottom: 26px;
+    clip-path: polygon(0 41%, 100% 0, 100% 100%, 0 100%);
+    transition: all linear .3s;
+}
+.pricing-bottom h5{
+    font-size: 16px ;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+
+.pricing-item:hover .pricing-bottom{
+    background-color: #fec600;
+}
+.pricing-item:hover .pricing-bottom h5{
+    color: #222222;
+}
+
+.pricing-item:hover .pricing-head{
+    background-color: #fec600;
+    color: #222222;
+}
+.pricing-item:hover .pricing-head h5{
+    color: #222222;
+}
+.pricing-item:hover .pricing-circle .circle-content .details h3{
+    color: #222222;
+}
+.pricing-item:hover .pricing-circle .circle-content .details p{
+    color: #222222;
+}
+
+/*======================== Counter css goes here ==================*/
+
+#counter{
+    background: url(../images/count-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    clip-path: polygon(100% 1%, 100% 81%, 0 100%, 0 18%);
+}
+
+#counter::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+.counter-item{
+    position: relative;
+    z-index: 99;
+    width: 200px;
+    height: 132px;
+    line-height: 60px;
+    border: 1px solid #f1f1f1;
+}
+
+.counter-item h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+.counter-item p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 10px;
+}
+
+/*======================== Our team css goes here ==================*/
+
+#team .headline p{
+line-height: 24px;
+}
+
+.team-img{
+    background-color: #f1f1f1;
+    clip-path: polygon(0 0, 100% 0%, 100% 56%, 0 66%);
+    position: relative;
+}
+
+.team-overlay{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 198, 0,0.50);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.team-item:hover .team-overlay{
+    opacity: 1;
+}
+.team-text{
+    margin-top: -120px;
+}
+
+.team-item{
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+}
+
+.social-team{
+    margin-bottom: 20px;
+}
+.social-team i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid #4e4e4e;
+    color: #111111;
+    font-size: 17px;
+    margin: 0 8px;
+    transition: all linear .3s;
+}
+
+.social-team i:hover {
+    background-color: #fec600;
+    border: 0;
+}
+
+.team-overlay i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #353535;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
